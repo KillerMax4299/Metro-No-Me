@@ -1,0 +1,26 @@
+.pendulum-container {
+  width: 200px; /* Change as needed */
+  height: 20px; /* Change as needed */
+  overflow: hidden;
+  border: 1px solid #ccc; /* Change as needed */
+  position: relative;
+  border-radius: 2rem;
+}
+
+.pendulum-progress {
+  width: 10%;
+  height: 100%;
+  background-color: #4caf50; /* Change as needed */
+  transition: transform ;
+  transform-style: flat;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.pendulum-progress.left {
+  transform: translateX(0%);
+}
+
+.pendulum-progress.right {
+  transform: translateX(900%);
+}
