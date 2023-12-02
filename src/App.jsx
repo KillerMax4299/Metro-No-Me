@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setInputVal(beats.toString());
     setDelay((60 / beats) * 1000);
-    if (beats > 300) setBeats(300);
+    if (beats > 208) setBeats(208);
   }, [beats]);
 
   // Update state when the window is resized
@@ -105,7 +105,7 @@ function App() {
         <div className="flex flex-col-reverse md:flex-row space-y-0 justify-between md:space-y-0 md:space-x-4 items-center">
           <button
             onClick={() => {
-              if (beats <= 295) setBeats((prev) => prev + 1);
+              if (beats <= 203) setBeats((prev) => prev + 1);
             }}
             className="px-4 w-16 border-zinc-500 border dark:border-zinc-600 rounded-2xl"
           >
@@ -113,7 +113,7 @@ function App() {
           </button>
           <button
             onClick={() => {
-              if (beats < 300) setBeats((prev) => prev + 5);
+              if (beats < 208) setBeats((prev) => prev + 5);
             }}
             className="px-4 w-16 border-zinc-500 border dark:border-zinc-600 rounded-2xl"
           >
